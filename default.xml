@@ -28,6 +28,7 @@
   <project path="hardware/qcom/bt" name="android_platform_hardware_qcom_bt" remote="github-digi" revision="pie/maint" />
   <project path="packages/apps/Settings" name="android_platform_packages_apps_Settings" remote="github-digi" revision="pie/maint" />
   <project path="vendor/digi/firmware" name="android_vendor_digi_firmware" remote="github-digi" revision="pie/maint" />
+  <project path="vendor/digi/proprietary" name="android_vendor_digi_proprietary" remote="github-digi" revision="pie/maint" />
   <project path="vendor/digi/qcacld-2.0" name="qcacld-2.0" remote="github-digi" revision="qca6574/dea-9.0/maint" />
   <project path="vendor/nxp-opensource/imx" name="android_platform_hardware_imx" remote="github-digi" revision="pie/maint" />
 
