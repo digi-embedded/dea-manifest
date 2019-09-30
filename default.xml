@@ -34,7 +34,7 @@
 
   <!-- Public i.MX repositories -->
   <project path="device/fsl" name="android-imx/device/fsl" remote="android-imx" revision="refs/tags/p9.0.0_1.0.0-ga" />
-  <project path="vendor/nxp-opensource/arm-trusted-firmware" name="imx-atf" remote="android-imx" revision="refs/tags/p9.0.0_1.0.0-ga" />
+  <project path="vendor/nxp-opensource/arm-trusted-firmware" name="imx-atf" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
   <project path="vendor/nxp-opensource/fsl_imx_demo" name="android-imx/platform/packages/apps/fsl_imx_demo" remote="android-imx" revision="refs/tags/p9.0.0_1.0.0-ga" />
   <project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="android-imx" revision="refs/tags/p9.0.0_1.0.0-ga" />
   <project path="vendor/nxp-opensource/imx-mkimage" name="imx-mkimage" remote="android-imx" revision="refs/tags/p9.0.0_1.0.0-ga" />
