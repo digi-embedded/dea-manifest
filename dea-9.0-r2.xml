@@ -7,12 +7,12 @@
   <remote  name="github-digi" fetch="https://github.com/digi-embedded/" />
 
   <!-- Digi Embedded Android kernel and U-Boot -->
-  <project path="vendor/digi/uboot-imx" name="u-boot" remote="github-digi" revision="v2018.03/maint" />
-  <project path="vendor/digi/kernel_imx" name="linux" remote="github-digi" revision="android/v4.14/maint" />
+  <project path="vendor/digi/uboot-imx" name="u-boot" remote="github-digi" revision="2854efcc84fbb420a247e6d6e51892e6399ea45b" />
+  <project path="vendor/digi/kernel_imx" name="linux" remote="github-digi" revision="20290aadccee128a9d25eaa186c53d147c805ebe" />
 
   <!-- Digi added/modified public repositories -->
-  <project path="bootable/recovery" name="android_platform_bootable_recovery" remote="github-digi" revision="pie/maint" />
-  <project path="build/make" name="android_platform_build_make" groups="pdk" remote="github-digi" revision="pie/maint" >
+  <project path="bootable/recovery" name="android_platform_bootable_recovery" remote="github-digi" revision="70f0b211c95415d885cf1486832ecc1cee038218" />
+  <project path="build/make" name="android_platform_build_make" groups="pdk" remote="github-digi" revision="9ae4a65f37ae085d2216cfef65530117a2a7b9c5" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -21,18 +21,18 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="device/digi" name="android_device_digi" remote="github-digi" revision="pie/maint" />
-  <project path="external/libsocketcan" name="android_platform_external_libsocketcan" remote="github-digi" revision="pie/maint" />
-  <project path="frameworks/base" name="android_platform_frameworks_base" remote="github-digi" revision="pie/maint" />
-  <project path="frameworks/opt/net/ethernet" name="android_platform_frameworks_opt_net_ethernet" remote="github-digi" revision="pie/maint" />
-  <project path="hardware/qcom/bt" name="android_platform_hardware_qcom_bt" remote="github-digi" revision="pie/maint" />
-  <project path="packages/apps/Settings" name="android_platform_packages_apps_Settings" remote="github-digi" revision="pie/maint" />
-  <project path="system/core" name="android_platform_system_core" groups="pdk" remote="github-digi" revision="pie/maint" />
-  <project path="vendor/digi/firmware" name="android_vendor_digi_firmware" remote="github-digi" revision="pie/maint" />
-  <project path="vendor/digi/proprietary" name="android_vendor_digi_proprietary" remote="github-digi" revision="pie/maint" />
-  <project path="vendor/digi/qcacld-2.0" name="qcacld-2.0" remote="github-digi" revision="qca6574/dea-9.0/maint" />
-  <project path="vendor/nxp-opensource/imx-mkimage" name="android_vendor_nxp-opensource_imx-mkimage" remote="github-digi" revision="pie/maint" />
-  <project path="vendor/nxp-opensource/imx" name="android_platform_hardware_imx" remote="github-digi" revision="pie/maint" />
+  <project path="device/digi" name="android_device_digi" remote="github-digi" revision="6e282b0f8e70a227050c3c8520db9aafd566bf56" />
+  <project path="external/libsocketcan" name="android_platform_external_libsocketcan" remote="github-digi" revision="6c71ac8b33413239d1c1a3a20dd0c35dfc9260ec" />
+  <project path="frameworks/base" name="android_platform_frameworks_base" remote="github-digi" revision="75e9c2f728e9372664bb92d22aaf967146fcf3a5" />
+  <project path="frameworks/opt/net/ethernet" name="android_platform_frameworks_opt_net_ethernet" remote="github-digi" revision="9586f802aa802b11649af5021ddc7da1bd667c2d" />
+  <project path="hardware/qcom/bt" name="android_platform_hardware_qcom_bt" remote="github-digi" revision="b7192a1fd03fd3ad4ad606c3e115ddbfbbf1893a" />
+  <project path="packages/apps/Settings" name="android_platform_packages_apps_Settings" remote="github-digi" revision="47f4caade01fe94a8873b7fad1e35bdf372c419f" />
+  <project path="system/core" name="android_platform_system_core" groups="pdk" remote="github-digi" revision="adc88b75ee166f2d81f4d9a97a9dbe2924555b9b" />
+  <project path="vendor/digi/firmware" name="android_vendor_digi_firmware" remote="github-digi" revision="19a0ad0629247cb28116a36cfc660f2685f8cee6" />
+  <project path="vendor/digi/proprietary" name="android_vendor_digi_proprietary" remote="github-digi" revision="843cbd1910f756ca5c938258ba87aa7350f7d46b" />
+  <project path="vendor/digi/qcacld-2.0" name="qcacld-2.0" remote="github-digi" revision="2a94b2734c5723ce4adab39a96cf3185ca2cc507" />
+  <project path="vendor/nxp-opensource/imx-mkimage" name="android_vendor_nxp-opensource_imx-mkimage" remote="github-digi" revision="fe340fc153347e53f91b3cd060f04ce1feba888f" />
+  <project path="vendor/nxp-opensource/imx" name="android_platform_hardware_imx" remote="github-digi" revision="0bc1284afc83a5b8023f9326661a7f392639ad15" />
 
   <!-- Public i.MX repositories -->
   <project path="device/fsl" name="android-imx/device/fsl" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
