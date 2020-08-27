@@ -8,7 +8,7 @@
 
   <!-- Digi Embedded Android kernel and U-Boot -->
   <project path="vendor/digi/uboot-imx" name="u-boot" remote="github-digi" revision="bf20e4c3882b1a0a1756a246b576941cd7ae454f" />
-  <project path="vendor/digi/kernel_imx" name="linux" remote="github-digi" revision="a460a45f3f76953cd55992b5022b4e0e2e787b21" />
+  <project path="vendor/digi/kernel_imx" name="linux" remote="github-digi" revision="bdc83a5c771f77d9d4d6be613fba02cdf0b2904a" />
 
   <!-- Digi added/modified public repositories -->
   <project path="bootable/recovery" name="android_platform_bootable_recovery" remote="github-digi" revision="1fe6580a59104a43b56a7d6eabf024a31757e298" />
@@ -21,7 +21,7 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="device/digi" name="android_device_digi" remote="github-digi" revision="4981cd0809d08d06f762d30eb327db4429f1551a" />
+  <project path="device/digi" name="android_device_digi" remote="github-digi" revision="1b897c0af2b0bda7e743e20cdf6e3d823716b7ce" />
   <project path="external/libsocketcan" name="android_platform_external_libsocketcan" remote="github-digi" revision="6c71ac8b33413239d1c1a3a20dd0c35dfc9260ec" />
   <project path="frameworks/base" name="android_platform_frameworks_base" remote="github-digi" revision="93a5f6eccdbc7573dd48f37e1a6653d8e96f3f4b" />
   <project path="frameworks/opt/net/ethernet" name="android_platform_frameworks_opt_net_ethernet" remote="github-digi" revision="9586f802aa802b11649af5021ddc7da1bd667c2d" />
@@ -29,7 +29,7 @@
   <project path="packages/apps/Settings" name="android_platform_packages_apps_Settings" remote="github-digi" revision="385c02665cd66a1e3a6a93d7f5bde1cbb1888183" />
   <project path="system/core" name="android_platform_system_core" groups="pdk" remote="github-digi" revision="b8a4f309b2966c91b965352e50371557306232f1" />
   <project path="vendor/digi/firmware" name="android_vendor_digi_firmware" remote="github-digi" revision="19a0ad0629247cb28116a36cfc660f2685f8cee6" />
-  <project path="vendor/digi/proprietary" name="android_vendor_digi_proprietary" remote="github-digi" revision="e465f7f1919608a9d2cef1a6a013dbf4c74ab245" />
+  <project path="vendor/digi/proprietary" name="android_vendor_digi_proprietary" remote="github-digi" revision="68cf65e62b3275e82c927998ba2d42f667fd487a" />
   <project path="vendor/digi/qcacld-2.0" name="qcacld-2.0" remote="github-digi" revision="2a94b2734c5723ce4adab39a96cf3185ca2cc507" />
   <project path="vendor/nxp-opensource/imx" name="android_platform_hardware_imx" remote="github-digi" revision="0d1b64a06b3fb327d67a3195db062302504cc303" />
 
