@@ -7,19 +7,19 @@
   <remote  name="github-digi" fetch="https://github.com/digi-embedded/" />
 
   <!-- Digi Embedded Android kernel and U-Boot -->
-  <project path="vendor/digi/uboot-imx" name="u-boot" remote="github-digi" revision="v2017.03/maint" />
-  <project path="vendor/digi/kernel_imx" name="linux" remote="github-digi" revision="android/v4.9/maint" />
+  <project path="vendor/digi/uboot-imx" name="u-boot" remote="github-digi" revision="2b3019187febca17b1bdcc22253bd96c303771fa" />
+  <project path="vendor/digi/kernel_imx" name="linux" remote="github-digi" revision="13b6435aa0413b8196ec3f33b3a1f4660edba541" />
 
   <!-- Digi added/modified public repositories -->
-  <project path="bootable/recovery" name="android_platform_bootable_recovery" remote="github-digi" revision="oreo/maint"/>
-  <project path="device/digi" name="android_device_digi" remote="github-digi" revision="oreo/maint" />
-  <project path="external/libsocketcan" name="android_platform_external_libsocketcan" remote="github-digi" revision="oreo/maint" />
-  <project path="frameworks/base" name="android_platform_frameworks_base" remote="github-digi" revision="oreo/maint" />
-  <project path="frameworks/opt/net/ethernet" name="android_platform_frameworks_opt_net_ethernet" remote="github-digi" revision="oreo/maint" />
-  <project path="packages/apps/Settings" name="android_platform_packages_apps_Settings" remote="github-digi" revision="oreo/maint" />
-  <project path="system/bt" name="android_platform_system_bt" remote="github-digi" revision="oreo/maint" />
-  <project path="vendor/digi/firmware" name="android_vendor_digi_firmware" remote="github-digi" revision="oreo/maint" />
-  <project path="vendor/nxp-opensource/imx" name="android_platform_hardware_imx" remote="github-digi" revision="oreo/maint" />
+  <project path="bootable/recovery" name="android_platform_bootable_recovery" remote="github-digi" revision="832a5df0d7bd0857030d6c181f06bc4c6bc806f0" />
+  <project path="device/digi" name="android_device_digi" remote="github-digi" revision="b999f638d4b3b3b7776418057f8c547be8c5fb7b" />
+  <project path="external/libsocketcan" name="android_platform_external_libsocketcan" remote="github-digi" revision="6c71ac8b33413239d1c1a3a20dd0c35dfc9260ec" />
+  <project path="frameworks/base" name="android_platform_frameworks_base" remote="github-digi" revision="ca01633b351c3678c48fb2ae0079bdbb71c7dfa3" />
+  <project path="frameworks/opt/net/ethernet" name="android_platform_frameworks_opt_net_ethernet" remote="github-digi" revision="f4da370d0713b6c07e6c9e5c719a72e0895d4ec3" />
+  <project path="packages/apps/Settings" name="android_platform_packages_apps_Settings" remote="github-digi" revision="9ac6c4749425eecf8fb9c93f569a6ef2f9464dfd" />
+  <project path="system/bt" name="android_platform_system_bt" remote="github-digi" revision="635ddc5671274697ecfc9d4d44881f23d73a4cd0" />
+  <project path="vendor/digi/firmware" name="android_vendor_digi_firmware" remote="github-digi" revision="d7e2d19e7482d4fddfcf8b3b8df1489cff8fa509" />
+  <project path="vendor/nxp-opensource/imx" name="android_platform_hardware_imx" remote="github-digi" revision="54c3682f1ace10c7e78bc370ceadac0136a5c091" />
 
   <!-- Public i.MX repositories -->
   <project path="device/fsl" name="android-imx/device/fsl" remote="android-imx" revision="refs/tags/o8.0.0_1.0.0-ga" />
