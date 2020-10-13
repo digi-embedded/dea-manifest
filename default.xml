@@ -11,8 +11,8 @@
   <project path="vendor/digi/kernel_imx" name="linux" remote="github-digi" revision="13b6435aa0413b8196ec3f33b3a1f4660edba541" />
 
   <!-- Digi added/modified public repositories -->
-  <project path="bootable/recovery" name="android_platform_bootable_recovery" remote="github-digi" revision="832a5df0d7bd0857030d6c181f06bc4c6bc806f0" />
-  <project path="device/digi" name="android_device_digi" remote="github-digi" revision="b999f638d4b3b3b7776418057f8c547be8c5fb7b" />
+  <project path="bootable/recovery" name="android_platform_bootable_recovery" remote="github-digi" revision="98a6dff89b37f33e37b74b253805c9b991d17412" />
+  <project path="device/digi" name="android_device_digi" remote="github-digi" revision="57e5fbf1cb4b9d7865bfcf5d749c556a23cf3966" />
   <project path="external/libsocketcan" name="android_platform_external_libsocketcan" remote="github-digi" revision="6c71ac8b33413239d1c1a3a20dd0c35dfc9260ec" />
   <project path="frameworks/base" name="android_platform_frameworks_base" remote="github-digi" revision="ca01633b351c3678c48fb2ae0079bdbb71c7dfa3" />
   <project path="frameworks/opt/net/ethernet" name="android_platform_frameworks_opt_net_ethernet" remote="github-digi" revision="f4da370d0713b6c07e6c9e5c719a72e0895d4ec3" />
