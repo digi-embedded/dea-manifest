@@ -18,6 +18,7 @@
   <project path="frameworks/opt/net/ethernet" name="android_platform_frameworks_opt_net_ethernet" remote="github-digi" revision="f4da370d0713b6c07e6c9e5c719a72e0895d4ec3" />
   <project path="packages/apps/Settings" name="android_platform_packages_apps_Settings" remote="github-digi" revision="9ac6c4749425eecf8fb9c93f569a6ef2f9464dfd" />
   <project path="system/bt" name="android_platform_system_bt" remote="github-digi" revision="635ddc5671274697ecfc9d4d44881f23d73a4cd0" />
+  <project path="system/vold" name="android_platform_system_vold" remote="github-digi" revision="b9980b58a548824a156fda3a36acd78c493f79f9" />
   <project path="vendor/digi/firmware" name="android_vendor_digi_firmware" remote="github-digi" revision="d7e2d19e7482d4fddfcf8b3b8df1489cff8fa509" />
   <project path="vendor/nxp-opensource/imx" name="android_platform_hardware_imx" remote="github-digi" revision="54c3682f1ace10c7e78bc370ceadac0136a5c091" />
 
