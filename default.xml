@@ -7,7 +7,7 @@
   <remote  name="github-digi" fetch="https://github.com/digi-embedded/" />
 
   <!-- Digi Embedded Android kernel and U-Boot -->
-  <project path="vendor/digi/uboot-imx" name="u-boot" remote="github-digi" revision="2b3019187febca17b1bdcc22253bd96c303771fa" />
+  <project path="vendor/digi/uboot-imx" name="u-boot" remote="github-digi" revision="72f9d767ff7be11e42eda1b642f87cad0dc9d4e1" />
   <project path="vendor/digi/kernel_imx" name="linux" remote="github-digi" revision="13b6435aa0413b8196ec3f33b3a1f4660edba541" />
 
   <!-- Digi added/modified public repositories -->
