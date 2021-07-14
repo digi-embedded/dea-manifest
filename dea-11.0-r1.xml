@@ -10,10 +10,10 @@
 
   <!-- Digi Embedded Android kernel and U-Boot -->
   <project path="vendor/digi/uboot-imx" name="u-boot" remote="github-digi" revision="b94328749d34d95d0902ff43e9adf8898061fb62" />
-  <project path="vendor/digi/kernel_imx" name="linux" remote="github-digi" revision="af5d70d3aa1189be2a4da5f38711ec7e0ed57563" />
+  <project path="vendor/digi/kernel_imx" name="linux" remote="github-digi" revision="c15d206def06a5b8808b29032b27579bbf2fab20" />
 
   <!-- Digi added/modified public repositories -->
-  <project path="device/digi" name="android_device_digi" remote="github-digi" revision="8356ce9a5549007462dc50a6d79730f815688d8a" >
+  <project path="device/digi" name="android_device_digi" remote="github-digi" revision="1842d79b8080e6247754cd3bd22b81948941a2d0" >
     <linkfile src="common/tools/imx-make.sh" dest="imx-make.sh" />
   </project>
   <project path="external/conscrypt" name="android_platform_external_conscrypt" remote="github-digi" revision="14b87a5419975ea7b78ba281bd27ad833baaf12b" />
