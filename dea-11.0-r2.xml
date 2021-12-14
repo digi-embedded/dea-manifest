@@ -9,28 +9,28 @@
   <remote  name="wireless-regdb" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/sforshee/" />
 
   <!-- Digi Embedded Android kernel and U-Boot -->
-  <project path="vendor/digi/uboot-imx" name="u-boot" remote="github-digi" revision="v2020.04/maint" />
-  <project path="vendor/digi/kernel_imx" name="linux" remote="github-digi" revision="android/v5.4/maint" />
+  <project path="vendor/digi/uboot-imx" name="u-boot" remote="github-digi" revision="028ce6553f41ad7cf5cce85037767b672d1fc50d" />
+  <project path="vendor/digi/kernel_imx" name="linux" remote="github-digi" revision="773b99c6c9bf60c35c1d9316153fcb523081ea50" />
 
   <!-- Digi added/modified public repositories -->
-  <project path="device/digi" name="android_device_digi" remote="github-digi" revision="dea11/maint" >
+  <project path="device/digi" name="android_device_digi" remote="github-digi" revision="0aea1be06fbc1c3feed66b1e32c8c0c847cf7f8c" >
     <linkfile src="common/tools/imx-make.sh" dest="imx-make.sh" />
   </project>
-  <project path="external/conscrypt" name="android_platform_external_conscrypt" remote="github-digi" revision="dea11/maint" />
-  <project path="external/libsocketcan" name="android_platform_external_libsocketcan" remote="github-digi" revision="dea11/maint" />
-  <project path="frameworks/base" name="android_platform_frameworks_base" remote="github-digi" revision="dea11/maint" />
-  <project path="frameworks/opt/net/ethernet" name="android_platform_frameworks_opt_net_ethernet" remote="github-digi" revision="dea11/maint" />
-  <project path="hardware/qcom/bt" name="android_platform_hardware_qcom_bt" remote="github-digi" revision="dea11/maint" />
-  <project path="packages/apps/Settings" name="android_platform_packages_apps_Settings" remote="github-digi" revision="dea11/maint" />
-  <project path="prebuilts/gcc/linux-x86/aarch64-nolibc" name="android_platform_prebuilts_gcc_linux-x86_aarch64-nolibc" remote="github-digi" revision="dea11/maint" />
-  <project path="system/core" name="android_platform_system_core" groups="pdk" remote="github-digi" revision="dea11/maint" />
-  <project path="system/libufdt" name="android_platform_system_libufdt" remote="github-digi" revision="dea11/maint" />
-  <project path="vendor/digi/firmware" name="android_vendor_digi_firmware" remote="github-digi" revision="dea11/maint" />
-  <project path="vendor/digi/firmwareupdatesample" name="android-sample-firmwareupdate" remote="github-digi" revision="dea11/maint" />
-  <project path="vendor/digi/proprietary" name="android_vendor_digi_proprietary" remote="github-digi" revision="dea11/maint" />
-  <project path="vendor/digi/qcacld-2.0" name="qcacld-2.0" remote="github-digi" revision="qca65X4/dea-11.0/maint" />
-  <project path="vendor/nxp-opensource/arm-trusted-firmware" name="imx-atf" remote="github-digi" revision="dea11/maint" />
-  <project path="vendor/nxp-opensource/imx" name="android_platform_hardware_imx" remote="github-digi" revision="dea11/maint" />
+  <project path="external/conscrypt" name="android_platform_external_conscrypt" remote="github-digi" revision="14b87a5419975ea7b78ba281bd27ad833baaf12b" />
+  <project path="external/libsocketcan" name="android_platform_external_libsocketcan" remote="github-digi" revision="fcc7dff3f89a3713d21243901c71b325423a798b" />
+  <project path="frameworks/base" name="android_platform_frameworks_base" remote="github-digi" revision="e240a5a38f4067d5c6e10d9f5503642561d8191e" />
+  <project path="frameworks/opt/net/ethernet" name="android_platform_frameworks_opt_net_ethernet" remote="github-digi" revision="bf8c287b8bf8fce4bfc6c6a1873404b35ee7b6d2" />
+  <project path="hardware/qcom/bt" name="android_platform_hardware_qcom_bt" remote="github-digi" revision="22e61d75c2edd378502b674562ba3b480cd004c9" />
+  <project path="packages/apps/Settings" name="android_platform_packages_apps_Settings" remote="github-digi" revision="7973ccfc84a039b95ffb3c743920e11fd08067e0" />
+  <project path="prebuilts/gcc/linux-x86/aarch64-nolibc" name="android_platform_prebuilts_gcc_linux-x86_aarch64-nolibc" remote="github-digi" revision="bf7877d780a80f3acfb98956696be9d1c3741dd5" />
+  <project path="system/core" name="android_platform_system_core" groups="pdk" remote="github-digi" revision="2b992093927bb25903e43396fe8cbed6af6914ba" />
+  <project path="system/libufdt" name="android_platform_system_libufdt" remote="github-digi" revision="29e4e94d9a7a6082577f7e27bd50a68ebdb2bac3" />
+  <project path="vendor/digi/firmware" name="android_vendor_digi_firmware" remote="github-digi" revision="ba7324eba38361a62b4f45d782e68d297c030b7d" />
+  <project path="vendor/digi/firmwareupdatesample" name="android-sample-firmwareupdate" remote="github-digi" revision="ebc524e627c01e74c2df3c6679ac83644e69a0de" />
+  <project path="vendor/digi/proprietary" name="android_vendor_digi_proprietary" remote="github-digi" revision="32717786a137b5c84b29ef837f3dc2661d7fe031" />
+  <project path="vendor/digi/qcacld-2.0" name="qcacld-2.0" remote="github-digi" revision="937ba1ddcefc2c9c32dc02715ad187eee3647fc9" />
+  <project path="vendor/nxp-opensource/arm-trusted-firmware" name="imx-atf" remote="github-digi" revision="6fda4a30dec686cfee8880e504e169cf06b5b113" />
+  <project path="vendor/nxp-opensource/imx" name="android_platform_hardware_imx" remote="github-digi" revision="94acde65ed1d4819d647a0ae0782d5aa4253619e" />
 
   <!-- Public i.MX repositories -->
   <project path="device/nxp" name="android-imx/device/fsl" remote="android-imx" revision="refs/tags/android-11.0.0_1.0.0" />
