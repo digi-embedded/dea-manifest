@@ -21,6 +21,7 @@
   <project path="system/sepolicy" name="android_platform_system_sepolicy" remote="github-digi" revision="40ff8b5121f0df89418c36a991298276311d6b8d" />
   <project path="system/vold" name="android_platform_system_vold" remote="github-digi" revision="b9980b58a548824a156fda3a36acd78c493f79f9" />
   <project path="vendor/digi/firmware" name="android_vendor_digi_firmware" remote="github-digi" revision="d7e2d19e7482d4fddfcf8b3b8df1489cff8fa509" />
+  <project path="vendor/digi/qcacld-2.0" name="qcacld-2.0" remote="github-digi" revision="24c4c7887335f1e21c7de3e73227239e6d769d0e" />
   <project path="vendor/nxp-opensource/imx" name="android_platform_hardware_imx" remote="github-digi" revision="54c3682f1ace10c7e78bc370ceadac0136a5c091" />
 
   <!-- Public i.MX repositories -->
