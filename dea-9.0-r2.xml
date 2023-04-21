@@ -3,8 +3,9 @@
 
   <include name="aosp-9.0-r2.xml"/>
 
-  <remote  name="android-imx" fetch="https://source.codeaurora.org/external/imx/" />
-  <remote  name="github-digi" fetch="https://github.com/digi-embedded/" />
+  <remote  name="android-imx"    fetch="https://github.com/nxp-imx-android/" />
+  <remote  name="imx-linux-sdk"  fetch="https://github.com/nxp-imx" />
+  <remote  name="github-digi"    fetch="https://github.com/digi-embedded/" />
 
   <!-- Digi Embedded Android kernel and U-Boot -->
   <project path="vendor/digi/uboot-imx" name="u-boot" remote="github-digi" revision="2854efcc84fbb420a247e6d6e51892e6399ea45b" />
@@ -35,42 +36,42 @@
   <project path="vendor/nxp-opensource/imx" name="android_platform_hardware_imx" remote="github-digi" revision="0bc1284afc83a5b8023f9326661a7f392639ad15" />
 
   <!-- Public i.MX repositories -->
-  <project path="device/fsl" name="android-imx/device/fsl" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="vendor/nxp-opensource/arm-trusted-firmware" name="imx-atf" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="vendor/nxp-opensource/fsl_imx_demo" name="android-imx/platform/packages/apps/fsl_imx_demo" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="vendor/nxp-opensource/libdrm-imx" name="libdrm-imx" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="device/fsl" name="android-imx_device_fsl" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="vendor/nxp-opensource/arm-trusted-firmware" name="imx-atf" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="vendor/nxp-opensource/fsl_imx_demo" name="android-imx_platform_packages_apps_fsl_imx_demo" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="vendor/nxp-opensource/libdrm-imx" name="libdrm-imx" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_2.3.0" />
 
   <!-- For i.MX changed AOSP git. -->
-  <project path="art" name="aosp/platform/art" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0"/>
-  <project path="build/soong" name="aosp/platform/build/soong" groups="pdk,tradefed" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" >
+  <project path="art" name="aosp_platform_art" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0"/>
+  <project path="build/soong" name="aosp_platform_build_soong" groups="pdk,tradefed" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="development" name="aosp/platform/development" groups="developers,pdk-cw-fs,pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="external/avb" name="aosp/platform/external/avb" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="external/tinyalsa" name="aosp/platform/external/tinyalsa" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="external/nanopb-c" name="aosp/platform/external/nanopb-c" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="external/wpa_supplicant_8" name="aosp/platform/external/wpa_supplicant_8" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="frameworks/av" name="aosp/platform/frameworks/av" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="frameworks/ml" name="aosp/platform/frameworks/ml" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="frameworks/native" name="aosp/platform/frameworks/native" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="frameworks/opt/net/wifi" name="aosp/platform/frameworks/opt/net/wifi" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="hardware/interfaces" name="aosp/platform/hardware/interfaces" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="hardware/qcom/wlan" name="aosp/platform/hardware/qcom/wlan" groups="qcom_wlan,pdk-qcom" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0"  />
-  <project path="packages/apps/Camera2" name="aosp/platform/packages/apps/Camera2" groups="pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="packages/apps/Car/Hvac" name="aosp/platform/packages/apps/Car/Hvac" groups="pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="packages/apps/Gallery" name="aosp/platform/packages/apps/Gallery" groups="pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0"/>
-  <project path="packages/apps/Gallery2" name="aosp/platform/packages/apps/Gallery2" groups="pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="packages/apps/Launcher3" name="aosp/platform/packages/apps/Launcher3" groups="pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="packages/apps/LegacyCamera" name="aosp/platform/packages/apps/LegacyCamera" groups="pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="packages/apps/SoundRecorder" name="aosp/platform/packages/apps/SoundRecorder" groups="pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="packages/apps/UnifiedEmail" name="aosp/platform/packages/apps/UnifiedEmail" groups="pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="packages/services/Car" name="aosp/platform/packages/services/Car" groups="pdk-cw-fs,pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="system/extras" name="aosp/platform/system/extras" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="system/libhidl" name="aosp/platform/system/libhidl" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="system/media" name="aosp/platform/system/media" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="system/sepolicy" name="aosp/platform/system/sepolicy" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="system/tools/bpt" name="aosp/platform/system/tools/bpt" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
-  <project path="system/vold" name="aosp/platform/system/vold" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="development" name="aosp_platform_development" groups="developers,pdk-cw-fs,pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="external/avb" name="aosp_platform_external_avb" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="external/tinyalsa" name="aosp_platform_external_tinyalsa" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="external/nanopb-c" name="aosp_platform_external_nanopb-c" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="external/wpa_supplicant_8" name="aosp_platform_external_wpa_supplicant_8" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="frameworks/av" name="aosp_platform_frameworks_av" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="frameworks/ml" name="aosp_platform_frameworks_ml" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="frameworks/native" name="aosp_platform_frameworks_native" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="frameworks/opt/net/wifi" name="aosp_platform_frameworks_opt_net_wifi" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="hardware/interfaces" name="aosp_platform_hardware_interfaces" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="hardware/qcom/wlan" name="aosp_platform_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0"  />
+  <project path="packages/apps/Camera2" name="aosp_platform_packages_apps_Camera2" groups="pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="packages/apps/Car/Hvac" name="aosp_platform_packages_apps_Car_Hvac" groups="pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="packages/apps/Gallery" name="aosp_platform_packages_apps_Gallery" groups="pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0"/>
+  <project path="packages/apps/Gallery2" name="aosp_platform_packages_apps_Gallery2" groups="pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="packages/apps/Launcher3" name="aosp_platform_packages_apps_Launcher3" groups="pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="packages/apps/LegacyCamera" name="aosp_platform_packages_apps_LegacyCamera" groups="pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="packages/apps/SoundRecorder" name="aosp_platform_packages_apps_SoundRecorder" groups="pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="packages/apps/UnifiedEmail" name="aosp_platform_packages_apps_UnifiedEmail" groups="pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="packages/services/Car" name="aosp_platform_packages_services_Car" groups="pdk-cw-fs,pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="system/extras" name="aosp_platform_system_extras" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="system/libhidl" name="aosp_platform_system_libhidl" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="system/media" name="aosp_platform_system_media" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="system/sepolicy" name="aosp_platform_system_sepolicy" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="system/tools/bpt" name="aosp_platform_system_tools_bpt" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
+  <project path="system/vold" name="aosp_platform_system_vold" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.0" />
 </manifest>
