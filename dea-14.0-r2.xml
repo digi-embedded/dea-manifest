@@ -10,25 +10,25 @@
   <remote  name="wireless-regdb" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/sforshee/" />
 
   <!-- Digi Embedded Android kernel and U-Boot -->
-  <project path="vendor/digi/uboot-imx" name="u-boot" remote="github-digi" revision="v2024.04/maint" />
-  <project path="vendor/digi/kernel_imx" name="linux" remote="github-digi" revision="android/v6.6/maint" />
+  <project path="vendor/digi/uboot-imx" name="u-boot" remote="github-digi" revision="dc2bd5d288ca472cb200c4c4e40c098ce14e84d5" />
+  <project path="vendor/digi/kernel_imx" name="linux" remote="github-digi" revision="3c402c61d0798d1f3f6421b8530f887f20fb1145" />
 
   <!-- Digi added/modified public repositories -->
-  <project path="device/digi" name="android_device_digi" remote="github-digi" revision="dea14/maint" >
+  <project path="device/digi" name="android_device_digi" remote="github-digi" revision="2f71f54875537056a265e4dcaf97856bdeff0303" >
     <linkfile src="common/tools/imx-make.sh" dest="imx-make.sh" />
     <copyfile src="common/tools/dea-setup-environment" dest="dea-setup-environment" />
   </project>
-  <project path="external/libsocketcan" name="android_platform_external_libsocketcan" remote="github-digi" revision="dea14/maint" />
-  <project path="frameworks/base" name="android_platform_frameworks_base" remote="github-digi" revision="dea14/maint" />
-  <project path="hardware/qcom/bt" name="android_platform_hardware_qcom_bt" remote="github-digi" revision="dea14/maint" />
-  <project path="hardware/qcom/wlan" name="android_platform_hardware_qcom_wlan" remote="github-digi" revision="dea14/maint" />
-  <project path="packages/modules/Connectivity" name="android_platform_packages_modules_Connectivity" remote="github-digi" revision="dea14/maint" />
-  <project path="prebuilts/gcc/linux-x86/aarch64-nolibc" name="android_platform_prebuilts_gcc_linux-x86_aarch64-nolibc" remote="github-digi" revision="dea14/maint" />
-  <project path="system/libufdt" name="android_platform_system_libufdt" remote="github-digi" revision="dea14/maint" />
-  <project path="vendor/digi/firmware" name="android_vendor_digi_firmware" remote="github-digi" revision="dea14/maint" />
-  <project path="vendor/digi/firmwareupdatesample" name="android-sample-firmwareupdate" remote="github-digi" revision="dea14/maint" />
-  <project path="vendor/digi/proprietary" name="android_vendor_digi_proprietary" remote="github-digi" revision="dea14/maint" />
-  <project path="vendor/digi/qcacld-2.0" name="qcacld-2.0" remote="github-digi" revision="qca65X4/dea-14.0/maint" />
+  <project path="external/libsocketcan" name="android_platform_external_libsocketcan" remote="github-digi" revision="fcc7dff3f89a3713d21243901c71b325423a798b" />
+  <project path="frameworks/base" name="android_platform_frameworks_base" remote="github-digi" revision="80c9857e90b00839d7543355e8570ed1bce2ff2b" />
+  <project path="hardware/qcom/bt" name="android_platform_hardware_qcom_bt" remote="github-digi" revision="fe56c83ae71f2a379c838920cf03995bfbe94b64" />
+  <project path="hardware/qcom/wlan" name="android_platform_hardware_qcom_wlan" remote="github-digi" revision="2dc3d5b07ed8470d28905de35e0b8621c1940859" />
+  <project path="packages/modules/Connectivity" name="android_platform_packages_modules_Connectivity" remote="github-digi" revision="972b84425f98ebf71825ae0e45f9de06bac9a598" />
+  <project path="prebuilts/gcc/linux-x86/aarch64-nolibc" name="android_platform_prebuilts_gcc_linux-x86_aarch64-nolibc" remote="github-digi" revision="279d135b55f03b4d00edd75e021a5208d5490733" />
+  <project path="system/libufdt" name="android_platform_system_libufdt" remote="github-digi" revision="8d2a35832f476372ec4b7b6df329b71bb621b321" />
+  <project path="vendor/digi/firmware" name="android_vendor_digi_firmware" remote="github-digi" revision="d0bd313089b05e000d73119c01d4161797dd345f" />
+  <project path="vendor/digi/firmwareupdatesample" name="android-sample-firmwareupdate" remote="github-digi" revision="b6b7d3285a406db6e3e09c0482d6fc92227cd8f8" />
+  <project path="vendor/digi/proprietary" name="android_vendor_digi_proprietary" remote="github-digi" revision="206dc0a7e345645dc358ac1ae8273098d0bd8e13" />
+  <project path="vendor/digi/qcacld-2.0" name="qcacld-2.0" remote="github-digi" revision="8f0756792ef310d3ebe829363dc1284c97b33604" />
 
   <!-- Public i.MX repositories -->
   <project path="device/nxp" name="android-imx_device_fsl" remote="imx-android" revision="refs/tags/android-14.0.0_2.2.0" />
